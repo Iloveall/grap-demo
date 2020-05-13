@@ -1,0 +1,36 @@
+@import "core";
+
+:host {
+  display: grid;
+  grid-gap: rem(9);
+}
+
+.__label {
+  font-family: $font-family-secondary;
+  font-size: rem(17);
+  font-weight: 300;
+  text-align: left;
+  color: var(--cl-white);
+}
+
+.__input {
+  width: 100%;
+  height: rem(32);
+
+  padding: rem(9);
+
+  font-family: $font-family-primary;
+  font-size: rem(12);
+  text-align: left;
+  color: var(--cl-white);
+
+  border: none;
+  border-radius: $elemRadiusSmall;
+  background-color: var(--greyish-brown-two);
+
+  transition: $transition-default;
+
+  &:hover, &:focus {
+    box-shadow: 0 0 0 1px #00f2ff;
+  }
+}

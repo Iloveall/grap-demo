@@ -1,6 +1,24 @@
-<p>sign-in works!</p>
+<div class="__left" fxLayout="column" fxLayoutAlign="end">
 
-<span class="gbi-arrow-down"></span>
+  <img class="__left-logo" src="assets/images/pmy-logo-new-white@3x.png">
+</div>
 
+<aside class="__right" fxLayout="column" fxLayoutAlign="center center">
+  <div class="__capt">Sign in</div>
 
-<button (click)="onSubmit()">Test</button>
+  <form class="__form" action="" gdGap="1.5rem">
+    <app-input label="Email" placeholder="Enter your email"></app-input>
+
+    <app-input type="password" label="Password" placeholder="Enter your password"></app-input>
+
+    <app-button>Sign in</app-button>
+  </form>
+
+  <a class="__link" href="">Forgot your password?</a>
+
+  <div class="__foot" gdGap="11px" gdColumns="max-content max-content">
+    Don’t have an account?
+
+    <a class="__link" href="">Sign up</a>
+  </div>
+</aside>

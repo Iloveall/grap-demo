@@ -126,6 +126,9 @@ $gbi-users: "\e907";
 $gbi-tr-left: "\e90f";
 $gbi-tr-right: "\e910";
 $gbi-search: "\e909";
+$gbi-web: "\e916";
+$gbi-home: "\e915";
+$gbi-widget: "\e91a";
 
 $icons-font-map: (
   arrow-down: $gbi-arrow-down,
@@ -148,7 +151,10 @@ $icons-font-map: (
   menu:$gbi-menu,
   power: $gbi-power,
   download: $gbi-download,
-  upload: $gbi-upload
+  upload: $gbi-upload,
+  web: $gbi-web,
+  home: $gbi-home,
+  widget: $gbi-widget
 );
 
 // links

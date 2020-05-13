@@ -1,0 +1,157 @@
+@import "core";
+
+:host {
+  //display: grid;
+  ////grid-auto-flow: column dense;
+  //grid-template-columns: 1fr max-content;
+
+  display: flex;
+
+  min-height: 100vh;
+}
+
+.__left {
+  position: relative;
+
+  flex: 1 1;
+
+  min-height: 100vh;
+
+  padding: rem(35);
+
+  overflow: hidden;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+
+    background: #0b7479 $img-login-2 no-repeat center left /cover;
+    transform: scale(1.2);
+    filter: blur(2px);
+  }
+}
+
+.__left-logo {
+  width: rem(177);
+  height: rem(63);
+
+  object-fit: contain;
+}
+
+.__form {
+  min-width: rem(327);
+
+  margin: rem(46) auto rem(35);
+}
+
+.__right {
+  padding: $contentGutterX3 10%;
+
+  font-family: $font-family-secondary;
+  text-align: center;
+
+  &:before {
+    width: rem(286);
+    height: rem(84);
+
+    margin: 30% auto $contentGutterX3;
+
+    content: '';
+
+    object-fit: contain;
+    object-position: center;
+
+    background: $img-login-flag center center /contain;
+  }
+}
+
+.__capt {
+  font-size: rem(30);
+  font-weight: 300;
+
+  text-align: center;
+  color: var(--cl-white);
+}
+
+.__link {
+  --link-color-hover: var(--cyan-four);
+  --link-color: var(--teal-blue) !important;
+
+  font-size: rem(12);
+}
+
+.__foot {
+  margin-top: auto;
+  padding-top: $contentGutterX2;
+
+  font-size: rem(12);
+  color: var(--bluey-grey);
+}
+
+@include max-wide(laptop) {
+
+  :host {
+    align-items: center;
+  }
+
+  .__left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .__right {
+    z-index: 1;
+
+    margin: auto;
+
+    padding: $contentGutterX3;
+
+    border-radius: $elemRadius;
+
+    background: rgba(#000, .8);
+    box-shadow: 0 5px 40px rgba(#000, .3);;
+  }
+
+  .__left-logo {
+    display: none;
+  }
+
+  .__right {
+    &:before {
+      width: 60%;
+
+      margin: 0 auto $contentGutterX2;
+
+      background: $img-logo-2 no-repeat center center / contain;
+    }
+  }
+}
+
+@include max-wide(phones) {
+  .__right {
+    padding: $contentGutterX2 * $multiplier;
+  }
+
+  .__form {
+    min-width: rem(235);
+
+    margin: $contentGutterX2 auto;
+  }
+}
+
+@include max-wide(phonesSm) {
+  .__right {
+    padding: $contentGutterX2;
+  }
+}

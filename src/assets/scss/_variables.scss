@@ -38,7 +38,7 @@ $multiplier: 1.25 !default;
 
 $elemRadius: rem(40) !default;
 $elemRadiusNormal: rem(10) !default;
-$elemRadiusSmall: rem(8) !default;
+$elemRadiusSmall: rem(4) !default;
 
 //* z-index
 $z-index-step: 10 !default;
@@ -53,7 +53,7 @@ $z-index: (
 $cl-primary: var(--cyan) !default;
 $cl-secondary: var(--cl-grey) !default;
 
-$base-font-color: $cl-secondary !default;
+$base-font-color: var(--cl-white) !default;
 $base-font-size-color: 16px !default;
 
 $cl-red: var(--orangey-red);
@@ -83,10 +83,15 @@ $gr-light-hide: linear-gradient(to bottom, rgba(255, 255, 255, 0) -100%, white 9
 //$cp-: ;
 
 // * images source
-$assets-path: 'src/assets/img/' !default;
+$assets-path: 'src/assets/images/' !default;
 
 //$img-about: url('#{$assets-path}.jpg');
-//$img-login: url('#{$assets-path}login-bg.jpg');
+$img-logo: url('#{$assets-path}pmy-logo-new-white.svg');
+$img-logo-2: url('#{$assets-path}pmy-logo-new-white@3x.png');
+$img-login: url('#{$assets-path}login-bg.png');
+$img-login-2: url('#{$assets-path}login-bg.jpg');
+$img-login-flag: url('#{$assets-path}sign-flag.png');
+
 
 // * fonts
 $font-path: 'assets/fonts' !default;
@@ -100,6 +105,10 @@ $icon-font-family: 'grab-icons' !default;
 $icon-font-prefix: 'gbi';
 $icon-font-path: $font-path + '/#{$icon-font-family}' !default;
 
+$gbi-power: "\e912";
+$gbi-download: "\e913";
+$gbi-upload: "\e914";
+$gbi-menu: "\e911";
 $gbi-arrow-down: "\e908";
 $gbi-arrow-left: "\e90a";
 $gbi-arrow-line-up: "\e90b";
@@ -136,34 +145,18 @@ $icons-font-map: (
   tr-left: $gbi-tr-left,
   tr-right: $gbi-tr-right,
   search: $gbi-search,
+  menu:$gbi-menu,
+  power: $gbi-power,
+  download: $gbi-download,
+  upload: $gbi-upload
 );
 
-// * buttons
-/*$button-primary-hover-color: var(--cl-white);
-$button-primary-hover-bg-color: var(--cl-violet-30);
-
-$button-primary-disabled-color: var(--cl-white);
-$button-primary-disabled-bg-color: var(--cl-violet-60);
-$button-primary-disabled-border-color: var(--cl-grey-80);
-
-$button-secondary-color: currentColor; // or $cl-secondary
-$button-secondary-bg-color: transparent;
-$button-secondary-border-color: var(--cl-grey-60);
-$button-secondary-border-size: 1px;
-
-$button-secondary-hover-color: $cl-primary;
-$button-secondary-hover-bg-color: transparent;
-$button-secondary-hover-border-color: $cl-primary;
-$button-secondary-hover-border-size: 2px;
-
-$button-secondary-disabled-color: var(--cl-grey-60);
-$button-secondary-disabled-bg-color: transparent;
-$button-secondary-disabled-border-color: var(--cl-grey-60);
-
-$button-transition: background-color 0.3s ease-in-out, transform 0.3s cubic-bezier(0.17, 0.67, 0.82, 0.59),
-  box-shadow 0.4s ease-in-out, color 0.2s ease-in-out;
-//* links */
-
+// links
 
 $link-color: currentColor !default;
 $link-hover-color: $cl-primary !default;
+
+//* transitions && animations
+$transition-default: 0.3s ease-in-out !default;
+$transition-border: border-color $transition-default !default;
+$transition-shadow: box-shadow $transition-default !default;

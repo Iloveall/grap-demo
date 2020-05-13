@@ -4,13 +4,15 @@ import { MainLayoutComponent } from './components/main-layout/main-layout.compon
 import { HeaderComponent } from './components/header/header.component';
 import { SidebarLeftComponent } from './components/sidebar-left/sidebar-left.component';
 import {RouterModule} from '@angular/router';
+import {FlexModule} from '@angular/flex-layout';
 
 
 @NgModule({
   declarations: [MainLayoutComponent, HeaderComponent, SidebarLeftComponent],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    FlexModule
   ]
 })
 export class MainLayoutModule { }

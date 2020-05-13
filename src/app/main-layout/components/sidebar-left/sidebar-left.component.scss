@@ -1,4 +1,7 @@
 .__wrapper {
+  width: 60px;
+  min-height: 100%;
+
   background: #000000;
 }
 
@@ -7,4 +10,22 @@
   padding: 0;
 
   list-style-type: none;
+}
+
+.__menu-item {
+  width: 100%;
+  height: 64px;
+
+  color: var(--cyan);
+
+  &.--active {
+    border-left: 3px solid var(--cyan);
+
+    background-color: #020203;
+  }
+}
+
+.__menu-link {
+  min-width: 100%;
+  min-height: 100%;
 }

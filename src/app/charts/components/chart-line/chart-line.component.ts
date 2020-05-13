@@ -1,9 +1,8 @@
 import {AfterViewInit, Component, ElementRef, Input, OnInit, ViewChild} from '@angular/core';
 
-import {select, mouse, event} from 'd3-selection';
+import {select, mouse} from 'd3-selection';
 import {scaleLinear, scaleTime} from 'd3-scale';
 import {axisLeft, axisBottom} from 'd3-axis';
-import {min, max, bisector} from 'd3-array';
 import {line} from 'd3-shape';
 
 @Component({
@@ -14,57 +13,7 @@ import {line} from 'd3-shape';
 export class ChartLineComponent implements OnInit, AfterViewInit {
   @ViewChild('chart', {static: true}) public chartRef: ElementRef;
 
-  chartData = [{
-    name: 'Some name',
-    color: '#00fff6',
-    values: [
-      {
-        timeStamp: 'Wed May 13 2020 09:00:00 GMT+0300 (GMT+03:00)',
-        value: 1000
-      },
-      {
-        timeStamp: 'Wed May 13 2020 15:00:00 GMT+0300 (GMT+03:00)',
-        value: 1000
-      },
-      {
-        timeStamp: 'Wed May 13 2020 15:01:00 GMT+0300 (GMT+03:00)',
-        value: 6000
-      },
-      {
-        timeStamp: 'Wed May 13 2020 16:00:00 GMT+0300 (GMT+03:00)',
-        value: 3000
-      },
-      {
-        timeStamp: 'Wed May 13 2020 23:00:00 GMT+0300 (GMT+03:00)',
-        value: 1000
-      }
-    ]
-  }, {
-    name: 'Some name',
-    color: '#ff0000',
-    values: [
-      {
-        timeStamp: 'Wed May 13 2020 09:00:00 GMT+0300 (GMT+03:00)',
-        value: 1200
-      },
-      {
-        timeStamp: 'Wed May 13 2020 12:00:00 GMT+0300 (GMT+03:00)',
-        value: 1400
-      },
-      {
-        timeStamp: 'Wed May 13 2020 14:01:00 GMT+0300 (GMT+03:00)',
-        value: 1500
-      },
-      {
-        timeStamp: 'Wed May 13 2020 17:00:00 GMT+0300 (GMT+03:00)',
-        value: 1200
-      },
-      {
-        timeStamp: 'Wed May 13 2020 23:00:00 GMT+0300 (GMT+03:00)',
-        value: 1000
-      }
-    ]
-  }];
+  chartData = [];
 
   @Input() set data(data) {
     if (!data) {
@@ -74,8 +23,8 @@ export class ChartLineComponent implements OnInit, AfterViewInit {
     this.chartData = data;
   }
 
-  minYScaleValue = 1000;
-  maxYScaleValue = 7000;
+  @Input() minYScaleValue = 1000;
+  @Input() maxYScaleValue = 7000;
 
   width: number;
   height: number;

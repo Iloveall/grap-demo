@@ -1,30 +1,50 @@
 <div class="__header" fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="10px">
-  <app-stats-progress-bar icon="gbi-users" caption="Total users" [value]="80" [amount]="3"
+  <app-stats-progress-bar icon="gbi-users"
+                          caption="Total users"
+                          [value]="80"
+                          [amount]="3"
                           [growingUp]="true"
                           fxFlex>
   </app-stats-progress-bar>
 
-  <app-stats-progress-bar icon="gbi-chart" caption="Total sessions" [value]="70" [amount]="430"
-                          [growingUp]="true" fxFlex></app-stats-progress-bar>
+  <app-stats-progress-bar icon="gbi-chart"
+                          caption="Total sessions"
+                          [value]="70"
+                          [amount]="430"
+                          [growingUp]="true" fxFlex>
+  </app-stats-progress-bar>
 
-  <app-stats-progress-bar icon="gbi-users" caption="Avg. session time" [value]="50" [amount]="'8m31s'"
-                          [growingUp]="true" fxFlex></app-stats-progress-bar>
+  <app-stats-progress-bar icon="gbi-users"
+                          caption="Avg. session time"
+                          [value]="50"
+                          [amount]="'8m31s'"
+                          [growingUp]="true" fxFlex>
+  </app-stats-progress-bar>
 
-  <app-stats-progress-bar icon="" caption="Avg. download" [value]="80" [amount]="'1.96mb'"
-                          fxFlex></app-stats-progress-bar>
+  <app-stats-progress-bar icon=""
+                          caption="Avg. download"
+                          [value]="80"
+                          [amount]="'1.96mb'"
+                          fxFlex>
+  </app-stats-progress-bar>
 
-  <app-stats-progress-bar icon="" caption="Avg. download" [value]="80" [amount]="'0.11mb'"
-                          [growingUp]="true" fxFlex></app-stats-progress-bar>
+  <app-stats-progress-bar icon=""
+                          caption="Avg. download"
+                          [value]="80"
+                          [amount]="'0.11mb'"
+                          [growingUp]="true"
+                          fxFlex>
+  </app-stats-progress-bar>
 </div>
 
 <div fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="10px">
   <div fxLayout="column" fxFlex>
     <app-info-card title="Ingress/Egress Count">
-      <app-chart-line></app-chart-line>
+      <app-chart-line [data]="charts.ingress"></app-chart-line>
     </app-info-card>
 
     <app-info-card title="Platform Crowd Density">
-      <app-chart-line></app-chart-line>
+      <app-chart-line [data]="charts.platform"></app-chart-line>
     </app-info-card>
   </div>
 
@@ -45,11 +65,11 @@
 
 <div fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="10px">
   <app-info-card title="Platform Occupancy - LIVE - Wed 6/5/20, 01:00 pm" fxFlex>
-    <app-chart-line></app-chart-line>
+    <app-chart-line [data]="charts.platformOccupancy"></app-chart-line>
   </app-info-card>
 
   <app-info-card title="Wireless Device Count - Dwell Time" fxFlex>
-    <app-chart-line></app-chart-line>
+    <app-chart-line [data]="charts.wireless"></app-chart-line>
   </app-info-card>
 </div>
 

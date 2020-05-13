@@ -1,15 +1,19 @@
 :host {
+  display: block;
+
   position: relative;
+
+  min-width: 100%;
 }
 
-.gridline-path {
+/*.gridline-path {
   &.gridline-path-horizontal {
     fill: #CDCDCD;
     opacity: .1;
 
     stroke-dasharray: 2;
   }
-}
+}*/
 
 .gp-chart-line-tooltip {
   display: block;

@@ -1,0 +1,169 @@
+//* Map size devices for media query
+$wideScreens: (
+  phonesSm: 340px,
+  phones: 480px,
+  phonesLg: 640px,
+  tablet: 768px,
+  laptop: 992px,
+  desktopSm: 1024px,
+  desktopMd: 1170px,
+  desktop: 1280px,
+  notebook: 1366px,
+  notebookLg: 1600px,
+  fullHD: 1800px,
+  retina: 2100px,
+  retina4k: 3656px,
+  retina5k: 5100px,
+  retina8k: 7600px
+);
+
+//* Main content && elements sizes
+//$contentWidth: var(--content-width);
+//$contentPadding: var(--content-padding);
+
+$guides: false;
+$guidesBody: false;
+$guidesContainer: false;
+$guidesCenter: true;
+$guides-color: #ff3e23;
+$guides-column: 12;
+
+$customContainer: true;
+$contentGutter: rem(16) !default;
+$contentGutterX2: rem(24) !default;
+$contentGutterX3: rem(48) !default;
+$contentGutterX4: rem(96) !default;
+
+$multiplier: 1.25 !default;
+
+$elemRadius: rem(40) !default;
+$elemRadiusNormal: rem(10) !default;
+$elemRadiusSmall: rem(8) !default;
+
+//* z-index
+$z-index-step: 10 !default;
+$z-index: (
+  start: 10,
+  middle: 50,
+  header: 100,
+  modal: 1000
+) !default;
+
+// * colors
+$cl-primary: var(--cyan) !default;
+$cl-secondary: var(--cl-grey) !default;
+
+$base-font-color: $cl-secondary !default;
+$base-font-size-color: 16px !default;
+
+$cl-red: var(--orangey-red);
+
+$cl-background: var(--black);
+
+//$cl-placeholder: var(--cl-grey-60);
+
+//$disabled-color: var(--cl-grey-60);
+//$disabled-bg-color: var(--cl-grey-60);
+//$disabled-bg-color-second: #e9e9eb;
+//$disabled-opacity: 0.9;
+
+// * shadows
+//$sh-card: 0 rem(10) rem(14) rgba(0, 0, 0, 0.07);
+//$sh-main: 0 rem(8) rem(21) rgba(0, 0, 0, 0.12);
+//$sh-up: 0 rem(-4) rem(21) rgba(0, 0, 0, 0.05);
+//$sh-: ;
+//$sh-: ;
+
+// * gradients
+//$gr-btn: linear-gradient(90deg, #cc229a 0%, #cc229a 1%, #941887 100%);
+$gr-light-hide: linear-gradient(to bottom, rgba(255, 255, 255, 0) -100%, white 96%, white 10%);
+//$gr-radial: radial-gradient();
+
+// * clip-paths and svg bg
+//$cp-: ;
+
+// * images source
+$assets-path: 'src/assets/img/' !default;
+
+//$img-about: url('#{$assets-path}.jpg');
+//$img-login: url('#{$assets-path}login-bg.jpg');
+
+// * fonts
+$font-path: 'assets/fonts' !default;
+
+$font-family-primary: 'Heebo', sans-serif;
+$font-family-secondary: 'Roboto', sans-serif;
+//$font-family-tertiary: 'Martel', serif;
+
+//* Icons
+$icon-font-family: 'grab-icons' !default;
+$icon-font-prefix: 'gbi-';
+$icon-font-path: $font-path + '/#{$icon-font-family}' !default;
+
+$gbi-arrow-down: "\e908";
+$gbi-arrow-left: "\e90a";
+$gbi-arrow-line-up: "\e90b";
+$gbi-arrow-line-down: "\e90c";
+$gbi-arrow-right: "\e90d";
+$gbi-arrow-up: "\e90e";
+$gbi-chart: "\e900";
+$gbi-speed: "\e901";
+$gbi-critical: "\e902";
+$gbi-bricks: "\e903";
+$gbi-globe: "\e904";
+$gbi-notification: "\e905";
+$gbi-settings: "\e906";
+$gbi-users: "\e907";
+$gbi-tr-left: "\e90f";
+$gbi-tr-left1: "\e910";
+$gbi-search: "\e909";
+
+$icons-font-map: (
+  arrow-down: $gbi-arrow-down,
+  arrow-left: $gbi-arrow-left,
+  arrow-line-up: $gbi-arrow-line-up,
+  arrow-line-down: $gbi-arrow-line-down,
+  arrow-right: $gbi-arrow-right,
+  arrow-up: $gbi-arrow-up,
+  chart: $gbi-chart,
+  speed: $gbi-speed,
+  critical: $gbi-critical,
+  bricks: $gbi-bricks,
+  globe: $gbi-globe,
+  notification: $gbi-notification,
+  settings: $gbi-settings,
+  users: $gbi-users,
+  tr-left: $gbi-tr-left,
+  tr-left1: $gbi-tr-left1,
+  search: $gbi-search,
+);
+
+// * buttons
+/*$button-primary-hover-color: var(--cl-white);
+$button-primary-hover-bg-color: var(--cl-violet-30);
+
+$button-primary-disabled-color: var(--cl-white);
+$button-primary-disabled-bg-color: var(--cl-violet-60);
+$button-primary-disabled-border-color: var(--cl-grey-80);
+
+$button-secondary-color: currentColor; // or $cl-secondary
+$button-secondary-bg-color: transparent;
+$button-secondary-border-color: var(--cl-grey-60);
+$button-secondary-border-size: 1px;
+
+$button-secondary-hover-color: $cl-primary;
+$button-secondary-hover-bg-color: transparent;
+$button-secondary-hover-border-color: $cl-primary;
+$button-secondary-hover-border-size: 2px;
+
+$button-secondary-disabled-color: var(--cl-grey-60);
+$button-secondary-disabled-bg-color: transparent;
+$button-secondary-disabled-border-color: var(--cl-grey-60);
+
+$button-transition: background-color 0.3s ease-in-out, transform 0.3s cubic-bezier(0.17, 0.67, 0.82, 0.59),
+  box-shadow 0.4s ease-in-out, color 0.2s ease-in-out;
+//* links */
+
+
+$link-color: currentColor !default;
+$link-hover-color: $cl-primary !default;

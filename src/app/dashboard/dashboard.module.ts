@@ -6,6 +6,7 @@ import {SharedModule} from '../shared/shared.module';
 import {FlexModule, GridModule} from '@angular/flex-layout';
 import { DashboardLayoutComponent } from './components/dashboard-layout/dashboard-layout.component';
 import { DashboardHeaderComponent } from './components/dashboard-header/dashboard-header.component';
+import {ChartsModule} from '../charts/charts.module';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { DashboardHeaderComponent } from './components/dashboard-header/dashboar
     DashboardRoutingModule,
     SharedModule,
     FlexModule,
-    GridModule
+    GridModule,
+    ChartsModule
   ]
 })
 export class DashboardModule { }

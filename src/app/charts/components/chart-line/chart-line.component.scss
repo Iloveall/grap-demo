@@ -1,0 +1,29 @@
+:host {
+  position: relative;
+}
+
+.gridline-path {
+  &.gridline-path-horizontal {
+    fill: #CDCDCD;
+    opacity: .1;
+
+    stroke-dasharray: 2;
+  }
+}
+
+.gp-chart-line-tooltip {
+  display: block;
+
+  position: absolute;
+
+  width: 100px;
+  height: 100px;
+}
+
+.__tooltip {
+  position: absolute;
+
+  &.--hidden {
+    visibility: hidden;
+  }
+}

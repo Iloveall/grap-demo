@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "frontend-grab"
+    }
+  },
+  "defaultProject": "frontend-grab",
+  "cli": {
+    "analytics": false
+  }
 }

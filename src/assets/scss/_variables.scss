@@ -97,7 +97,7 @@ $font-family-secondary: 'Roboto', sans-serif;
 
 //* Icons
 $icon-font-family: 'grab-icons' !default;
-$icon-font-prefix: 'gbi-';
+$icon-font-prefix: 'gbi';
 $icon-font-path: $font-path + '/#{$icon-font-family}' !default;
 
 $gbi-arrow-down: "\e908";
@@ -115,7 +115,7 @@ $gbi-notification: "\e905";
 $gbi-settings: "\e906";
 $gbi-users: "\e907";
 $gbi-tr-left: "\e90f";
-$gbi-tr-left1: "\e910";
+$gbi-tr-right: "\e910";
 $gbi-search: "\e909";
 
 $icons-font-map: (
@@ -134,7 +134,7 @@ $icons-font-map: (
   settings: $gbi-settings,
   users: $gbi-users,
   tr-left: $gbi-tr-left,
-  tr-left1: $gbi-tr-left1,
+  tr-right: $gbi-tr-right,
   search: $gbi-search,
 );
 

@@ -13,4 +13,12 @@
   color: #ffffff;
 }
 
-.__wrapper {}
+.__wrapper {
+  color: #ffffff;
+
+  background-image: linear-gradient(to top, #223247, #223247), linear-gradient(to top, #ffffff, #fafbfc);
+}
+
+.__draggable {
+  cursor: move;
+}

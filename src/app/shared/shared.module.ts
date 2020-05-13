@@ -4,14 +4,16 @@ import { StatsProgressBarComponent } from './components/stats-progress-bar/stats
 import { ChartCardComponent } from './components/chart-card/chart-card.component';
 import { InfoCardComponent } from './components/info-card/info-card.component';
 import {FlexModule} from '@angular/flex-layout';
+import { CameraPreviewComponent } from './components/camera-preview/camera-preview.component';
+import { StatsListComponent } from './components/stats-list/stats-list.component';
 
 
 @NgModule({
-  declarations: [StatsProgressBarComponent, ChartCardComponent, InfoCardComponent],
+  declarations: [StatsProgressBarComponent, ChartCardComponent, InfoCardComponent, CameraPreviewComponent, StatsListComponent],
   imports: [
     CommonModule,
     FlexModule
   ],
-  exports: [StatsProgressBarComponent, ChartCardComponent, InfoCardComponent]
+  exports: [StatsProgressBarComponent, ChartCardComponent, InfoCardComponent, CameraPreviewComponent, StatsListComponent]
 })
 export class SharedModule { }

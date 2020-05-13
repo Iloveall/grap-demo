@@ -16,6 +16,7 @@
   line-height: 1.55;
   letter-spacing: 0.83px;
   text-align: left;
+  text-transform: uppercase;
   color: #fff;
 }
 
@@ -39,10 +40,25 @@
 
 }
 
-.__icon {
-
+.__main-icon {
+  color: var(--blue-grey);
 }
 
 .__value {
+  font-size: 11px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.73;
+  letter-spacing: normal;
+  color: var(--cl-white);
+}
 
+.__arrow-icon {
+  font-size: 12px;
+  color: var(--green);
+
+  &.--down {
+    color: var(--orangey-red);
+  }
 }

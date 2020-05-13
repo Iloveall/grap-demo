@@ -4,3 +4,11 @@
 
   list-style-type: none;
 }
+
+.__warning {
+  color: red;
+}
+
+.__success {
+  color: var(--bright-lime-green);
+}

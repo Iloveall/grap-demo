@@ -5,14 +5,16 @@
 
   <div class="__progress-bar">
     <div>
-      <span class="__icon">icon</span>
+      <span class="__main-icon" [ngClass]="icon"></span>
       <span class="__caption">{{ caption }}</span>
     </div>
 
-    bar
+    <div>
+      <ngb-progressbar type="info" [value]="value" height="10px"></ngb-progressbar>
+    </div>
 
     <div>
-      <span class="__icon">icon</span>
+      <span class="__arrow-icon" [ngClass]="{'gbi-arrow-line-up': growingUp, 'gbi-arrow-line-down': !growingUp, '--down': !growingUp}"></span>
       <span class="__value">{{ value }}% than APR 20</span>
     </div>
   </div>

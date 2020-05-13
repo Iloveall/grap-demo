@@ -1,23 +1,46 @@
 <div class="__header" fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="10px">
-  <app-stats-progress-bar icon="" caption="Total users" [value]="80" [amount]="3" fxFlex></app-stats-progress-bar>
-  <app-stats-progress-bar icon="" caption="Total sessions" [value]="70" [amount]="430" fxFlex></app-stats-progress-bar>
-  <app-stats-progress-bar icon="" caption="Avg. session time" [value]="50" [amount]="'8m31s'" fxFlex></app-stats-progress-bar>
-  <app-stats-progress-bar icon="" caption="Avg. download" [value]="80" [amount]="'1.96mb'" fxFlex></app-stats-progress-bar>
-  <app-stats-progress-bar icon="" caption="Avg. download" [value]="80" [amount]="'0.11mb'" fxFlex></app-stats-progress-bar>
+  <app-stats-progress-bar icon="gbi-users" caption="Total users" [value]="80" [amount]="3"
+                          [growingUp]="true"
+                          fxFlex>
+  </app-stats-progress-bar>
+
+  <app-stats-progress-bar icon="gbi-chart" caption="Total sessions" [value]="70" [amount]="430"
+                          [growingUp]="true" fxFlex></app-stats-progress-bar>
+
+  <app-stats-progress-bar icon="gbi-users" caption="Avg. session time" [value]="50" [amount]="'8m31s'"
+                          [growingUp]="true" fxFlex></app-stats-progress-bar>
+
+  <app-stats-progress-bar icon="" caption="Avg. download" [value]="80" [amount]="'1.96mb'"
+                          fxFlex></app-stats-progress-bar>
+
+  <app-stats-progress-bar icon="" caption="Avg. download" [value]="80" [amount]="'0.11mb'"
+                          [growingUp]="true" fxFlex></app-stats-progress-bar>
 </div>
 
 <div fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="10px">
-  <app-info-card title="Ingress/Egress Count" fxFlex>
-    <app-chart-line></app-chart-line>
-  </app-info-card>
+  <div fxLayout="column" fxFlex>
+    <app-info-card title="Ingress/Egress Count">
+      <app-chart-line></app-chart-line>
+    </app-info-card>
 
-  <app-info-card title="Platform Crowd Density" fxFlex>
-    <app-chart-line></app-chart-line>
-  </app-info-card>
+    <app-info-card title="Platform Crowd Density">
+      <app-chart-line></app-chart-line>
+    </app-info-card>
+  </div>
 
-  <app-info-card [title]="'Network Services'" fxFlex>
-    <app-stats-list></app-stats-list>
-  </app-info-card>
+  <div fxFlex>
+    map
+  </div>
+
+  <div fxLayout="column" fxFlex>
+    <app-info-card title="Network Services" fxFlex>
+      <app-stats-list></app-stats-list>
+    </app-info-card>
+
+    <app-info-card title="Mobile devices" fxFlex>
+      Mobile devices chart
+    </app-info-card>
+  </div>
 </div>
 
 <div fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="10px">

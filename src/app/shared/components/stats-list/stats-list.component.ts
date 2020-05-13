@@ -3,31 +3,38 @@ import {Component, Input, OnInit} from '@angular/core';
 const ITEMS = [
   {
     name: 'Wi-Fi',
-    icon: 'wifi'
+    icon: 'gbi-critical',
+    color: '#ff3728'
   },
   {
     name: 'Ethernet',
-    icon: 'wifi'
+    icon: 'gbi-critical',
+    color: '#54ff00'
   },
   {
     name: 'DHCP',
-    icon: 'wifi'
+    icon: 'gbi-critical',
+    color: '#54ff00'
   },
   {
     name: 'Gateway',
-    icon: 'wifi'
+    icon: 'gbi-critical',
+    color: '#54ff00'
   },
   {
     name: 'DNS',
-    icon: 'wifi'
+    icon: 'gbi-critical',
+    color: '#54ff00'
   },
   {
     name: 'Captive Portal',
-    icon: 'wifi'
+    icon: 'gbi-critical',
+    color: '#54ff00'
   },
   {
     name: 'Network Gateway',
-    icon: 'wifi'
+    icon: 'gbi-critical',
+    color: '#54ff00'
   }
 ];
 

@@ -10,7 +10,7 @@ export class StatsProgressBarComponent implements OnInit {
   @Input() caption: string;
   @Input() value: number;
   @Input() growingUp: boolean;
-  @Input() icon: boolean;
+  @Input() icon: string;
 
   constructor() { }
 

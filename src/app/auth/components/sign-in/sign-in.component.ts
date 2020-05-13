@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-sign-in',
@@ -7,9 +9,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignInComponent implements OnInit {
 
-  constructor() { }
+  submitted: boolean;
+  form: FormGroup;
+
+  constructor(private fb: FormBuilder, private router: Router) { }
 
   ngOnInit(): void {
+    this.createForm();
+  }
+
+  private createForm(): void {
+    this.form = this.fb.group({
+      login: [Validators.required],
+      password: [Validators.required]
+    });
+  }
+
+  private signIn(): void {
+    this.router.navigate(['/dashboard']);
+  }
+
+  onSubmit(): void {
+    if (this.form.invalid) {
+      this.submitted = true;
+      return;
+    }
+
+    this.signIn();
   }
 
 }

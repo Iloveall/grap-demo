@@ -7,10 +7,11 @@ import {FlexModule, GridModule} from '@angular/flex-layout';
 import { DashboardLayoutComponent } from './components/dashboard-layout/dashboard-layout.component';
 import { DashboardHeaderComponent } from './components/dashboard-header/dashboard-header.component';
 import {ChartsModule} from '../charts/charts.module';
+import { DashboardExecutiveComponent } from './components/dashboard-executive/dashboard-executive.component';
 
 
 @NgModule({
-  declarations: [DashboardComponent, DashboardLayoutComponent, DashboardHeaderComponent],
+  declarations: [DashboardComponent, DashboardLayoutComponent, DashboardHeaderComponent, DashboardExecutiveComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,

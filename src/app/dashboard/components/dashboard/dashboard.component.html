@@ -1,6 +1,11 @@
 <div class="__content" gdGap="6px">
 <!--  gdGap="6px" gdGap.gt-sm="6px 36px" gdColumns.gt-sm="repeat(auto-fit, minmax(200px, 1fr))"-->
-  <article class="__top" fxLayout="row" fxLayoutAlign="space-between" gdGap="6px 6px" gdGap.gt-sm="6px 36px">
+  <article class="__top"
+           fxLayout="row"
+           fxLayoutAlign="space-between"
+           gdGap="6px"
+           gdGap.gt-sm="6px 36px"
+           gdColumns.gt-sm="repeat(auto-fit, minmax(200px, 1fr))">
     <app-stats-progress-bar icon="gbi-users"
                             caption="Total users"
                             [value]="80"
@@ -47,7 +52,7 @@
        gdGap="6px"
        gdColumns.gt-sm="1fr 4fr 1f 1fr"
        gdRows.gt-sm="max-content max-content">
-    <app-info-card title="Ingress/Egress Count" gdColumn.gt-sm="1" gdRow.gt-sm="1">
+    <app-info-card title="Ingress/Egress Count" link="https://au.skyfii.com/login" gdColumn.gt-sm="1" gdRow.gt-sm="1">
       <app-chart-line [data]="charts?.ingress?.data"
                       [minYScaleValue]="charts?.ingress?.minYScaleValue"
                       [maxYScaleValue]="charts?.ingress?.maxYScaleValue"

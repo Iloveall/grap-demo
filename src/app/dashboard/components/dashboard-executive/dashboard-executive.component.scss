@@ -1,0 +1,43 @@
+@import "core";
+
+:host {
+  display: block;
+
+  background-color: var(--dark-grey-blue);
+}
+
+.__top {
+  //display: grid!important;
+  //grid-gap: rem(6) rem(36)!important;
+  //grid-template-columns: repeat(auto-fit, minmax(200px, 260px))!important;
+}
+
+
+.__content {
+  padding: rem(3);
+}
+
+.__central-charts {
+  & > * {
+    &:nth-child(1), &:nth-child(2) {
+      //max-width: 20vw;
+    }
+  }
+}
+
+.__map {
+  width: 100%;
+  min-width: 40vw;
+  height: 100%;
+  min-height: 300px;
+
+  background: $img-map no-repeat center center /cover;
+}
+
+.__svg-cont {
+  width: 100%;
+  height: 90%;
+
+  padding: rem(12);
+}
+

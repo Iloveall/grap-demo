@@ -26,7 +26,7 @@ export class SignInComponent implements OnInit {
   }
 
   private signIn(): void {
-    this.router.navigate(['/dashboard']);
+    this.router.navigate(['/dashboard/executive']);
   }
 
   onSubmit(): void {

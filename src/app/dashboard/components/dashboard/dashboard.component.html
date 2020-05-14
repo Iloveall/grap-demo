@@ -1,5 +1,6 @@
 <div class="__content" gdGap="6px">
-  <article class="__top" gdGap="6px" gdGap.gt-sm="6px 36px" gdColumns.gt-sm="repeat(auto-fit, minmax(200px, 1fr))">
+<!--  gdGap="6px" gdGap.gt-sm="6px 36px" gdColumns.gt-sm="repeat(auto-fit, minmax(200px, 1fr))"-->
+  <article class="__top" fxLayout="row" fxLayoutAlign="space-between" gdGap="6px 6px" gdGap.gt-sm="6px 36px">
     <app-stats-progress-bar icon="gbi-users"
                             caption="Total users"
                             [value]="80"
@@ -12,14 +13,16 @@
                             caption="Total sessions"
                             [value]="70"
                             [amount]="430"
-                            [growingUp]="true" fxFlex>
+                            [growingUp]="true"
+                            fxFlex>
     </app-stats-progress-bar>
 
     <app-stats-progress-bar icon="gbi-users"
                             caption="Avg. session time"
                             [value]="50"
                             [amount]="'8m31s'"
-                            [growingUp]="true" fxFlex>
+                            [growingUp]="true"
+                            fxFlex>
     </app-stats-progress-bar>
 
     <app-stats-progress-bar icon="gbi-download"
@@ -37,7 +40,7 @@
                             fxFlex>
     </app-stats-progress-bar>
 
-    <app-stats-alarms></app-stats-alarms>
+    <app-stats-alarms fxFlex></app-stats-alarms>
   </article>
 
   <div class="__central-charts"

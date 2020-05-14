@@ -157,4 +157,14 @@ $progress-box-shadow: inset 0 0 0 var(--progress-line-size, rem(2)) var(--progre
     --progress-radius: #{0 0 rem(5) rem(5)};
     --progress-height: #{rem(8)};
   }
+
+  &.--sean {
+    .progress {
+      background-color: rgba(0, 0, 0, .2);
+    }
+
+    .progress-bar {
+      background-color: var(--cyan-two) !important;
+    }
+  }
 }

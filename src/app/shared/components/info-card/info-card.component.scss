@@ -3,6 +3,8 @@
 :host {
   display: inline-block;
 
+  overflow: hidden;
+
   &.--cameras {
     width: 100%;
 
@@ -27,6 +29,8 @@
 }
 
 .__wrapper {
+  height: 100%;
+
   color: #ffffff;
 
   background-image: linear-gradient(to top, #000, #223247), linear-gradient(to top, #ffffff, #fafbfc);

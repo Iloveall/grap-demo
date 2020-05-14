@@ -1,5 +1,5 @@
 <div class="__content" gdGap="6px">
-  <article class="__top" gdGap="6px" gdGap.gt-sm="6px 36px" gdColumns.gt-sm="repeat(auto-fit, minmax(200px, 260px))">
+  <article class="__top" gdGap="6px" gdGap.gt-sm="6px 36px" gdColumns.gt-sm="repeat(auto-fit, minmax(200px, 1fr))">
     <app-stats-progress-bar icon="gbi-users"
                             caption="Total users"
                             [value]="80"
@@ -38,13 +38,12 @@
     </app-stats-progress-bar>
 
     <app-stats-alarms></app-stats-alarms>
-
   </article>
 
   <div class="__central-charts"
        gdGap="6px"
        gdColumns.gt-sm="1fr 4fr 1f 1fr"
-       gdRows.gt-sm="1fr 1fr">
+       gdRows.gt-sm="max-content max-content">
     <app-info-card title="Ingress/Egress Count" gdColumn.gt-sm="1" gdRow.gt-sm="1">
       <app-chart-line [data]="charts?.ingress?.data"
                       [minYScaleValue]="charts?.ingress?.minYScaleValue"
@@ -73,8 +72,8 @@
       Mobile devices chart
     </app-info-card>
 
-    <app-info-card title="Visitor tracking" gdColumn.gt-sm="5" gdRow.gt-sm="1">
-      <app-stats-progress-bar-list></app-stats-progress-bar-list>
+    <app-info-card title="Internet Monitor" gdColumn.gt-sm="5" gdRow.gt-sm="1">
+      Internet Monitor
     </app-info-card>
 
     <app-info-card title="Mobile Apps" gdColumn.gt-sm="5" gdRow.gt-sm="2">
@@ -82,7 +81,7 @@
     </app-info-card>
   </div>
 
-  <div gdGap="6px" gdColumns.gt-xs="1fr 1fr">
+  <div gdGap="6px" gdColumns.gt-xs="1fr 1fr .4fr">
     <app-info-card title="Platform Occupancy - "
                    description="LIVE - Wed 6/5/20, 01:00 pm"
                    link="https://app.armoredthings.us/overview">
@@ -101,6 +100,10 @@
                       [tooltipType]="charts?.wireless?.tooltipType"
                       [tickValues]="charts?.wireless?.tickValues">
       </app-chart-line>
+    </app-info-card>
+
+    <app-info-card title="Visitor tracking">
+      <app-stats-progress-bar-list></app-stats-progress-bar-list>
     </app-info-card>
   </div>
 

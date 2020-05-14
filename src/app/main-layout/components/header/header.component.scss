@@ -1,7 +1,169 @@
+@import "core";
+
 :host {
-  height: 59px;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  width: auto;
+  min-width: max-content;
+  height: rem(60);
+
+  background-color: var(--greyish-brown-two);
+  box-shadow: 0 1px 0 0 var(--cyan);
 }
 
-.__wrapper {
-  background-color: #474747;
+.__logo {
+  padding: rem(12);
+
+  font-size: rem(10);
+  font-weight: 300;
+  line-height: 2.2;
+  letter-spacing: 0.5px;
+  color: var(--cyan-two);
+  text-align: center;
+
+  &:before {
+    width: rem(70);
+    height: rem(24);
+
+    content: '';
+
+    background: $img-logo-2 no-repeat center center / contain;
+  }
+}
+
+.__btn {
+  display: inline-flex;
+
+  padding: rem(10);
+
+  font-size: rem(19);
+  color: var(--cl-white);
+
+  border: none;
+  background: none;
+
+  &:hover {
+    color: var(--cyan-two);
+  }
+
+  &--notif {
+    position: relative;
+
+    color: var(--cyan-two);
+
+    &:after {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      content: '';
+
+      width: rem(8);
+      height: rem(8);
+
+      border-radius: 50%;
+
+      background-color: #ff151f;
+
+      transform: translate(-5px, 0);
+    }
+  }
+
+  &--dashboard{
+    font-size: rem(16);
+  }
+}
+
+.__right {
+  height: 100%;
+
+  margin-left: auto;
+}
+
+.__user {
+  height: 100%;
+
+  margin-left: rem(10);
+  padding: 0 rem(6) 0 rem(34);
+
+  font-size: rem(13);
+  color: var(--cl-white);
+
+  box-shadow: -1px 0 0 0 rgba(#fff, .1);
+}
+
+.__user-avatar {
+  width: rem(36);
+  height: rem(36);
+
+  margin-left: rem(18);
+
+  font-size: rem(17);
+  font-weight: 700;
+
+  color: var(--cl-white);
+
+  border-radius: rem(12);
+  background-color: var(--cyan-three);
+
+  transform: translate(-2px, 0);
+}
+
+.__btn-arrow {
+  padding: rem(10);
+  font-size: rem(8);
+
+  color: var(--cl-white);
+
+  border: none;
+  background: none;
+
+  cursor: pointer;
+
+  &:hover {
+    color: var(--cyan-two);
+  }
+}
+
+.__btn-dropdown {
+  height: 100%;
+
+  padding: 0 rem(28);
+
+  color: var(--cl-white);
+
+  border: none;
+  background: none;
+  box-shadow: -1px 0 0 0 rgba(#fff, .1), 1px 0 0 0 rgba(#fff, .1);
+
+  .gbi-tr-left {
+    margin-left: rem(8);
+
+    font-size: rem(10);
+
+    transform: rotate(-90deg);
+  }
+}
+
+@include max-wide(phonesLg) {
+  .__btn-dropdown, .__user-name {
+    display: none!important;
+  }
+
+  .__user {
+    padding-left: rem(20);
+  }
+
+  .__user-avatar{
+    margin-left: 0;
+  }
+}
+
+@include min-wide(phonesLg) {
+  .__btn--dashboard {
+    display: none!important;
+  }
 }

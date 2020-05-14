@@ -1,0 +1,54 @@
+@import "core";
+
+:host {
+  display: inline-grid;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+  grid-gap: rem(15);
+
+  padding: 0 rem(30);
+}
+
+.__btn {
+  display: inline-flex;
+
+  font-size: rem(19);
+  color: var(--cl-white);
+
+  border: none;
+  background: none;
+
+  &:hover {
+    color: var(--cyan-two);
+  }
+}
+
+.__input {
+  width: rem(150);
+
+  font-size: rem(15);
+  line-height: 1.47;
+  font-weight: 600;
+  text-align: left;
+  color: var(--cl-white);
+
+  border: none;
+  background: transparent;
+
+  @include placeholder {
+    color: rgba(255, 255, 255, 0.4);
+
+    opacity: 0.4;
+  }
+
+  &, &:focus {
+    outline: none;
+  }
+}
+
+
+@include max-wide(phonesLg) {
+  :host {
+    padding: 0 rem(16);
+  }
+}

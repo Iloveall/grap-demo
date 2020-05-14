@@ -1,0 +1,54 @@
+.gp-axis {
+  &__y, &__x {
+    line {
+      stroke: #1f2a37;
+      //opacity: 0.05;
+    }
+
+    .tick {
+      fill: var(--colorWhite);
+
+      font-size: 10px;
+      line-height: normal;
+      text-align: right;
+      letter-spacing: 0.1em;
+    }
+
+    .domain {
+      stroke: #CDCDCD;
+      opacity: 0.05;
+    }
+
+/*    &--hide-ticks {
+      .tick {
+        display: none;
+      }
+    }*/
+  }
+
+  &__x {
+/*    line {
+      display: none;
+    }*/
+  }
+
+  &__y {
+/*    line {
+      stroke-dasharray: 4;
+    }*/
+
+/*    .tick {
+      &:first-child {
+        line {
+          display: none;
+        }
+      }
+
+      &:last-child {
+        line {
+          display: none;
+        }
+      }
+    }*/
+  }
+}

@@ -23,12 +23,11 @@
     <span class="__user-name">Hi, Joe!</span>
 
     <mark class="__user-avatar" fxLayoutAlign="center center">J</mark>
-    <button class="__btn-arrow gbi-arrow-down"></button>
+    <button class="__btn-arrow gbi-arrow-down" (click)="openMenu()"></button>
   </div>
 </div>
 
-
-<div class="__aside">
+<div class="__aside" [ngClass]="{'--is-open': isOpenMenu}">
   <div class="__content">
     <div class="__aside-item">
       <div class="__aside-item-head" fxLayoutAlign="space-between center">

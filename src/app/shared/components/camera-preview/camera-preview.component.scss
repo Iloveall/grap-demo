@@ -12,10 +12,11 @@
 
   border-radius: rem(16);
 
-  overflow: hidden;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: contain;
+  background-size: cover;
+
+  overflow: hidden;
 }
 
 .__value {

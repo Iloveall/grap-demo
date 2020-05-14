@@ -1,7 +1,7 @@
 @import "core";
 
 :host {
- height: 59px;
+  min-height: rem(60);
 }
 
 .__wrapper {
@@ -23,23 +23,30 @@
 }
 
 .__amount {
-  width: 83px;
+  width: max-content;
+  min-width:rem(83);
   min-height: 100%;
+
+  padding: 0 $contentGutterX2;
 
   background: #1d2b3d;
 
-  font-size: 22px;
+  font-size: rem(22);
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 0.77;
   letter-spacing: 0.55px;
   text-align: left;
   color: #fff;
 }
 
 .__container {
+  width: 100%;
   padding: rem(5);
+}
+
+.__progress {
+  width: 100%;
+
+  padding: rem(7) 0;
 }
 
 .__main-icon {
@@ -49,12 +56,9 @@
 }
 
 .__value {
-  font-size: 11px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.73;
-  letter-spacing: normal;
+  margin-left: rem(8);
+
+  font-size: rem(11);
   color: var(--cl-white);
 }
 

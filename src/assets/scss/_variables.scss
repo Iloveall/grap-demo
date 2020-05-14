@@ -85,7 +85,7 @@ $gr-light-hide: linear-gradient(to bottom, rgba(255, 255, 255, 0) -100%, white 9
 // * images source
 $assets-path: 'src/assets/images/' !default;
 
-//$img-about: url('#{$assets-path}.jpg');
+$img-map: url('#{$assets-path}map.png');
 $img-logo: url('#{$assets-path}pmy-logo-new-white.svg');
 $img-logo-2: url('#{$assets-path}pmy-logo-new-white@3x.png');
 $img-login: url('#{$assets-path}login-bg.png');

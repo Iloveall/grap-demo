@@ -4,17 +4,18 @@
   </div>
 
   <div class="__container">
-    <div>
+    <div class="__top" gdColumns="max-content 1fr" gdGap="7px" gdAlignColumns="center">
       <span class="__main-icon" [ngClass]="icon"></span>
       <span class="__caption">{{ caption }}</span>
     </div>
 
-    <div>
+    <div class="__progress">
       <ngb-progressbar class="__progress-bar" type="info" [value]="value" height="6px"></ngb-progressbar>
     </div>
 
     <div>
-      <span class="__arrow-icon" [ngClass]="{'gbi-arrow-line-up': growingUp, 'gbi-arrow-line-down': !growingUp, '--down': !growingUp}"></span>
+      <span class="__arrow-icon"
+            [ngClass]="{'gbi-arrow-line-up': growingUp, 'gbi-arrow-line-down': !growingUp, '--down': !growingUp}"></span>
       <span class="__value">{{ value }}% than APR 20</span>
     </div>
   </div>

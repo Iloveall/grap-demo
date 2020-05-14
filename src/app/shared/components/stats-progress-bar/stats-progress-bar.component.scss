@@ -1,7 +1,10 @@
 @import "core";
 
 :host {
+  min-width: max-content;
   min-height: rem(60);
+
+  white-space: nowrap;
 }
 
 .__wrapper {

@@ -2,15 +2,15 @@
 
 .__list {
   margin: 0;
-  padding: rem(34) rem(18);
+  padding: rem(30) rem(18) rem(18);
 
   list-style-type: none;
 }
 
 .__item {
-  margin-bottom: rem(11);
-
   font-size: rem(14);
+  letter-spacing: 0.35px;
+  line-height: 1;
 }
 
 .__name {

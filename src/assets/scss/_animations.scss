@@ -8,6 +8,18 @@
   }
 }
 
+@include keyframes(show-item) {
+  from {
+    transform: scale(0);
+    opacity: var(--show-item-from, 0);
+  }
+
+  to {
+    transform: scale(1);
+    opacity: var(--show-item-from, 1);
+  }
+}
+
 @include keyframes(repeat-bg-animate) {
   from {
     background-position: 0 0;

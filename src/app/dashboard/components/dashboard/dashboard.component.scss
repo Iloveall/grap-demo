@@ -1,3 +1,5 @@
+@import "core";
+
 :host {
   display: block;
 
@@ -6,4 +8,13 @@
 
 .__header {
   margin-bottom: 20px;
+}
+
+
+.__cameras {
+
+}
+
+.__cameras-header {
+  @extend %card-header;
 }

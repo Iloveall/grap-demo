@@ -3,28 +3,25 @@
 :host {
   display: inline-block;
 
-  //overflow: hidden;
+  &.--cameras {
+    width: 100%;
 
+    .__draggable{
+      display: none;
+    }
 
+    .__wrapper {
+      padding: rem(8);
+
+      display: grid !important;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-gap: $contentGutterX3;
+    }
+  }
 }
 
 .__header {
-  height: 41px;
-
-  padding: rem(10);
-
-  background: #000000;
-
-  font-size: 15px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.33;
-  letter-spacing: normal;
-  text-align: left;
-  color: #ffffff;
-
-  cursor: pointer;
+  @extend %card-header;
 
   border-radius: rem(4) rem(4) 0 0;
 }

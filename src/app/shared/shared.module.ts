@@ -12,10 +12,11 @@ import {InputComponent} from './components/input/input.component';
 import { StatsAlarmsComponent } from './components/stats-alarms/stats-alarms.component';
 import {FormsModule} from '@angular/forms';
 import { StatsProgressBarListComponent } from './components/stats-progress-bar-list/stats-progress-bar-list.component';
+import { SearchComponent } from './components/search/search.component';
 
 
 @NgModule({
-  declarations: [StatsProgressBarComponent, ChartCardComponent, InfoCardComponent, CameraPreviewComponent, StatsListComponent, ButtonComponent, InputComponent, StatsAlarmsComponent, StatsProgressBarListComponent],
+  declarations: [StatsProgressBarComponent, ChartCardComponent, InfoCardComponent, CameraPreviewComponent, StatsListComponent, ButtonComponent, InputComponent, StatsAlarmsComponent, StatsProgressBarListComponent, SearchComponent],
   imports: [
     CommonModule,
     NgbProgressbarModule,
@@ -23,7 +24,7 @@ import { StatsProgressBarListComponent } from './components/stats-progress-bar-l
     GridModule,
     FormsModule
   ],
-  exports: [StatsProgressBarComponent, ChartCardComponent, InfoCardComponent, CameraPreviewComponent, StatsListComponent, InputComponent, ButtonComponent, StatsAlarmsComponent, StatsProgressBarListComponent]
+  exports: [StatsProgressBarComponent, ChartCardComponent, InfoCardComponent, CameraPreviewComponent, StatsListComponent, InputComponent, ButtonComponent, StatsAlarmsComponent, StatsProgressBarListComponent, SearchComponent]
 })
 export class SharedModule {
 }

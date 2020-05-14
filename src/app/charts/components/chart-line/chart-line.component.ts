@@ -4,6 +4,7 @@ import {select, mouse} from 'd3-selection';
 import {scaleLinear, scaleTime} from 'd3-scale';
 import {axisLeft, axisBottom} from 'd3-axis';
 import {line} from 'd3-shape';
+import set = Reflect.set;
 
 @Component({
   selector: 'app-chart-line',
@@ -84,14 +85,29 @@ export class ChartLineComponent implements OnInit, AfterViewInit {
     this.createLinesGroup();
     this.createMousePointer();
 
-    this.drawLinesData();
+    setTimeout(() => {
+      this.xScale.domain([
+        new Date('Wed May 13 2020 09:00:00 GMT+0300 (GMT+03:00)'),
+        new Date('Wed May 13 2020 23:00:00 GMT+0300 (GMT+03:00)')
+      ]);
+
+      this.xAxis.scale(this.xScale);
+      this.$xAxis
+        .transition()
+        .duration(800)
+        .call(this.xAxis);
+    }, 250);
+
+    setTimeout(() => {
+      this.drawLinesData();
+    }, 1500);
   }
 
   createX(): void {
     this.xScale = scaleTime()
       .domain([
         new Date('Wed May 13 2020 09:00:00 GMT+0300 (GMT+03:00)'),
-        new Date('Wed May 13 2020 23:00:00 GMT+0300 (GMT+03:00)')
+        new Date('Wed May 13 2020 10:00:00 GMT+0300 (GMT+03:00)')
       ])
       .range([0, this.width]);
   }

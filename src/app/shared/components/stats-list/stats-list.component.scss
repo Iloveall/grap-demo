@@ -1,8 +1,22 @@
+@import "core";
+
 .__list {
   margin: 0;
-  padding: 0;
+  padding: rem(34) rem(18);
 
   list-style-type: none;
+}
+
+.__item {
+  margin-bottom: rem(11);
+
+  font-size: rem(14);
+}
+
+.__name {
+  display: inline-block;
+
+  margin-left: rem(26);
 }
 
 .__warning {

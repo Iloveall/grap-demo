@@ -3,14 +3,14 @@
     {{ amount }}
   </div>
 
-  <div class="__progress-bar">
+  <div class="__container">
     <div>
       <span class="__main-icon" [ngClass]="icon"></span>
       <span class="__caption">{{ caption }}</span>
     </div>
 
     <div>
-      <ngb-progressbar type="info" [value]="value" height="10px"></ngb-progressbar>
+      <ngb-progressbar class="__progress-bar" type="info" [value]="value" height="6px"></ngb-progressbar>
     </div>
 
     <div>

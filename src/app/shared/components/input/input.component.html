@@ -1,3 +1,11 @@
 <label class="__label">{{label}}</label>
 
-<input class="__input" [attr.type]="type" [attr.placeholder]="placeholder">
+<input class="__input"
+       [disabled]="disabled"
+       (change)="onChange($event)"
+       (keyup)="onChange($event)"
+       (focus)="onFocus($event)"
+       (blur)="onBlur($event)"
+       [(ngModel)]="value?.address || value"
+       [attr.type]="type"
+       [attr.placeholder]="placeholder">

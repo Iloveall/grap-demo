@@ -6,10 +6,10 @@
 <aside class="__right" fxLayout="column" fxLayoutAlign="center center">
   <div class="__capt">Sign in</div>
 
-  <form class="__form" action="" gdGap="1.5rem">
-    <app-input label="Email" placeholder="Enter your email"></app-input>
+  <form class="__form" gdGap="1.5rem" [formGroup]="form" (submit)="onSubmit()">
+    <app-input label="Email" type="email" placeholder="Enter your email" formControlName="email"></app-input>
 
-    <app-input type="password" label="Password" placeholder="Enter your password"></app-input>
+    <app-input type="password" label="Password" placeholder="Enter your password" formControlName="password"></app-input>
 
     <app-button>Sign in</app-button>
   </form>

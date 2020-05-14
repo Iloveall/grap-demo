@@ -8,9 +8,14 @@ import {Component, Input, OnInit} from '@angular/core';
 export class InfoCardComponent implements OnInit {
   @Input() title: string;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
+  }
+
+  open() {
+    window.open('https://google.com', '_blank');
   }
 
 }

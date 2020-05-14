@@ -1,3 +1,13 @@
+//* ngb-progressbar
+$cl-primary: #00fff6;
+
+$progress-height: var(--progress-height, rem(10));
+$progress-bar-bg: var(--cyan-two, $cl-primary);
+$progress-border-radius: var(--progress-radius, rem(10));
+$progress-border-radius-inside: rem(10);
+$progress-bg: var(--progress-bg-color, var(--black));
+$progress-box-shadow: inset 0 0 0 var(--progress-line-size, rem(2)) var(--progress-line-color);
+
 .__progress-bar {
   .progress {
     box-shadow: $progress-box-shadow;

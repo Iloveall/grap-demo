@@ -20,8 +20,8 @@ export class SignInComponent implements OnInit {
 
   private createForm(): void {
     this.form = this.fb.group({
-      login: [Validators.required],
-      password: [Validators.required]
+      email: ['', [Validators.required, Validators.email]],
+      password: ['', Validators.required]
     });
   }
 
@@ -30,6 +30,7 @@ export class SignInComponent implements OnInit {
   }
 
   onSubmit(): void {
+    console.log(this.form.value);
     if (this.form.invalid) {
       this.submitted = true;
       return;

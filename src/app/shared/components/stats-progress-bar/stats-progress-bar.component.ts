@@ -8,7 +8,7 @@ import {Component, Input, OnInit} from '@angular/core';
 export class StatsProgressBarComponent implements OnInit {
   @Input() amount: number|string;
   @Input() caption: string;
-  @Input() value: number;
+  @Input() value = 0;
   @Input() growingUp: boolean;
   @Input() icon: string;
 

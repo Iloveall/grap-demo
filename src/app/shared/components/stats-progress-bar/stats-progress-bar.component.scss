@@ -1,3 +1,5 @@
+@import "core";
+
 :host {
  height: 59px;
 }
@@ -36,12 +38,14 @@
   color: #fff;
 }
 
-.__progress-bar {
-
+.__container {
+  padding: rem(5);
 }
 
 .__main-icon {
   color: var(--blue-grey);
+
+  margin-right: rem(7);
 }
 
 .__value {

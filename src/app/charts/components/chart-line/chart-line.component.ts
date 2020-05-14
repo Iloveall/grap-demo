@@ -102,6 +102,8 @@ export class ChartLineComponent implements OnInit, AfterViewInit {
       .append('g')
       .attr('class', 'gp-axis__x')
       .attr('transform', 'translate(0,' + this.height + ')')
+      .transition()
+      .duration(500)
       .call(this.xAxis);
   }
 
@@ -121,6 +123,8 @@ export class ChartLineComponent implements OnInit, AfterViewInit {
       .append('g')
       .attr('class', 'gp-axis__y')
       .attr('width', this.width)
+      .transition()
+      .duration(500)
       .call(this.yAxis);
   }
 

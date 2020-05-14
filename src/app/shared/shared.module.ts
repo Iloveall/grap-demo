@@ -9,17 +9,21 @@ import { StatsListComponent } from './components/stats-list/stats-list.component
 import {NgbProgressbarModule} from '@ng-bootstrap/ng-bootstrap';
 import {ButtonComponent} from './components/button/button.component';
 import {InputComponent} from './components/input/input.component';
+import { StatsAlarmsComponent } from './components/stats-alarms/stats-alarms.component';
+import {FormsModule} from '@angular/forms';
+import { StatsProgressBarListComponent } from './components/stats-progress-bar-list/stats-progress-bar-list.component';
 
 
 @NgModule({
-  declarations: [StatsProgressBarComponent, ChartCardComponent, InfoCardComponent, CameraPreviewComponent, StatsListComponent, ButtonComponent, InputComponent],
+  declarations: [StatsProgressBarComponent, ChartCardComponent, InfoCardComponent, CameraPreviewComponent, StatsListComponent, ButtonComponent, InputComponent, StatsAlarmsComponent, StatsProgressBarListComponent],
   imports: [
     CommonModule,
     NgbProgressbarModule,
     FlexModule,
-    GridModule
+    GridModule,
+    FormsModule
   ],
-  exports: [StatsProgressBarComponent, ChartCardComponent, InfoCardComponent, CameraPreviewComponent, StatsListComponent, InputComponent, ButtonComponent]
+  exports: [StatsProgressBarComponent, ChartCardComponent, InfoCardComponent, CameraPreviewComponent, StatsListComponent, InputComponent, ButtonComponent, StatsAlarmsComponent, StatsProgressBarListComponent]
 })
 export class SharedModule {
 }

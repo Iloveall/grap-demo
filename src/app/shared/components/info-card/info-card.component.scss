@@ -1,5 +1,17 @@
+@import "core";
+
+:host {
+  display: inline-block;
+
+  overflow: hidden;
+
+  border-radius: rem(4);
+}
+
 .__header {
   height: 41px;
+
+  padding: rem(10);
 
   background: #000000;
 
@@ -11,6 +23,8 @@
   letter-spacing: normal;
   text-align: left;
   color: #ffffff;
+
+  cursor: pointer;
 }
 
 .__wrapper {

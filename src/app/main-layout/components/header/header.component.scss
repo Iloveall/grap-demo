@@ -166,6 +166,18 @@
 
   background: rgba(#3a3939, .9);
   backdrop-filter: blur(4px);
+
+  transition: opacity .5s;
+
+  &.--is-open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:not(.--is-open) {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 .__aside-foot {
@@ -222,7 +234,6 @@
   text-align: left;
   color: var(--cl-white);
 }
-
 
 .__aside-item {
   overflow: hidden;

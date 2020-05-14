@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, ElementRef, Input, OnInit, ViewChild} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, Input, OnInit, Renderer2, ViewChild} from '@angular/core';
 
 import {select, mouse} from 'd3-selection';
 import {scaleLinear, scaleTime} from 'd3-scale';
@@ -12,6 +12,7 @@ import {line} from 'd3-shape';
 })
 export class ChartLineComponent implements OnInit, AfterViewInit {
   @ViewChild('chart', {static: true}) public chartRef: ElementRef;
+  @ViewChild('tooltip', {static: true}) public tooltipContainerRef: ElementRef;
 
   chartData = [];
 
@@ -47,7 +48,7 @@ export class ChartLineComponent implements OnInit, AfterViewInit {
   linesG: any;
   mouseG: any;
 
-  constructor(private el: ElementRef) {
+  constructor(private el: ElementRef, private renderer: Renderer2) {
   }
 
   ngOnInit(): void {
@@ -181,14 +182,16 @@ export class ChartLineComponent implements OnInit, AfterViewInit {
       .attr('pointer-events', 'all');
 
     this.mouseG
-      .on('mouseover', () =>
-        this.mouseG.select('.mouse-line').style('display', null)
-      )
-      .on('mouseout', () =>
-        this.mouseG.select('.mouse-line').style('display', 'none')
-      )
+      .on('mouseover', () => {
+        this.mouseG.select('.mouse-line').style('display', null);
+        this.showTooltip();
+      })
+      .on('mouseout', () => {
+        this.mouseG.select('.mouse-line').style('display', 'none');
+        this.hideTooltip();
+      })
       .on('mousemove', (_, j, nodes) => {
-        const position =  mouse(nodes[0])[0];
+        const position = mouse(nodes[0])[0];
 
         this.svg
           .selectAll('.mouse-line')
@@ -197,7 +200,19 @@ export class ChartLineComponent implements OnInit, AfterViewInit {
             d += ' ' + position + ',' + 0;
             return d;
           });
+
+        this.renderer.setStyle(this.tooltipContainerRef.nativeElement, 'top', `15px`);
+        this.renderer.setStyle(this.tooltipContainerRef.nativeElement, 'left', `${position + 60}px`);
       });
   }
+
+  showTooltip(): void {
+    this.renderer.setStyle(this.tooltipContainerRef.nativeElement, 'visibility', 'visible');
+  }
+
+  hideTooltip(): void {
+    this.renderer.setStyle(this.tooltipContainerRef.nativeElement, 'visibility', 'hidden');
+  }
+
 
 }

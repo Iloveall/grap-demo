@@ -3,9 +3,9 @@
 :host {
   display: inline-block;
 
-  overflow: hidden;
+  //overflow: hidden;
 
-  border-radius: rem(4);
+
 }
 
 .__header {
@@ -25,12 +25,16 @@
   color: #ffffff;
 
   cursor: pointer;
+
+  border-radius: rem(4) rem(4) 0 0;
 }
 
 .__wrapper {
   color: #ffffff;
 
   background-image: linear-gradient(to top, #000, #223247), linear-gradient(to top, #ffffff, #fafbfc);
+
+  border-radius: 0 0 rem(4) rem(4);
 }
 
 .__draggable {

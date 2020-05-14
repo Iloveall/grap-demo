@@ -1,0 +1,17 @@
+<div class="__wrapper">
+  <div class="__icon-arrow">
+    <span class="gbi-arrow-line-down"></span> 12(35%)
+  </div>
+  <div>
+    Weds 4/21 10:00am
+    Estimate Count: 41
+  </div>
+
+  <div class="__values">
+    <div class="__value" *ngFor="let value of values">
+        <span class="gp-round __value-icon"
+              [style.background-color]="value.color">
+        </span>
+    </div>
+  </div>
+</div>

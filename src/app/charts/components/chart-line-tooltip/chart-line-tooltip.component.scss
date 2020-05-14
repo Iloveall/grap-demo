@@ -1,0 +1,25 @@
+@import "core";
+
+:host {
+  position: relative;
+}
+
+.__values {
+  margin-top: 14px;
+}
+
+.__wrapper {
+  display: block;
+
+  max-width: 60px;
+
+  background-color: var(--greyish-brown-two);
+
+  border-radius: 2px;
+
+  font-size: rem(9);
+}
+
+.__icon-arrow {
+  color: var(--orangey-red);
+}

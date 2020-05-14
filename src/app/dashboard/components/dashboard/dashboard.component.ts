@@ -67,23 +67,23 @@ const PLATFORM_CHART = [
     values: [
       {
         timeStamp: 'Wed May 13 2020 09:00:00 GMT+0300 (GMT+03:00)',
-        value: 1000
+        value: 0
       },
       {
         timeStamp: 'Wed May 13 2020 15:00:00 GMT+0300 (GMT+03:00)',
-        value: 1000
+        value: 20
       },
       {
         timeStamp: 'Wed May 13 2020 15:01:00 GMT+0300 (GMT+03:00)',
-        value: 6000
+        value: 30
       },
       {
         timeStamp: 'Wed May 13 2020 16:00:00 GMT+0300 (GMT+03:00)',
-        value: 3000
+        value: 60
       },
       {
         timeStamp: 'Wed May 13 2020 23:00:00 GMT+0300 (GMT+03:00)',
-        value: 1000
+        value: 30
       }
     ]
   }, {
@@ -94,23 +94,23 @@ const PLATFORM_CHART = [
     values: [
       {
         timeStamp: 'Wed May 13 2020 09:00:00 GMT+0300 (GMT+03:00)',
-        value: 1200
+        value: 19
       },
       {
         timeStamp: 'Wed May 13 2020 12:00:00 GMT+0300 (GMT+03:00)',
-        value: 1400
+        value: 16
       },
       {
         timeStamp: 'Wed May 13 2020 14:01:00 GMT+0300 (GMT+03:00)',
-        value: 1500
+        value: 14
       },
       {
         timeStamp: 'Wed May 13 2020 17:00:00 GMT+0300 (GMT+03:00)',
-        value: 1200
+        value: 13
       },
       {
         timeStamp: 'Wed May 13 2020 23:00:00 GMT+0300 (GMT+03:00)',
-        value: 1000
+        value: 11
       }
     ]
   }
@@ -120,28 +120,28 @@ const PLATFORM_OCCUPANCY_CHART = [
   {
     name: 'Some name',
     color: '#00fff6',
-    minYScaleValue: 1000,
-    maxYScaleValue: 7000,
+    minYScaleValue: 0,
+    maxYScaleValue: 80,
     values: [
       {
         timeStamp: 'Wed May 13 2020 09:00:00 GMT+0300 (GMT+03:00)',
-        value: 1000
+        value: 0
       },
       {
         timeStamp: 'Wed May 13 2020 15:00:00 GMT+0300 (GMT+03:00)',
-        value: 1000
+        value: 10
       },
       {
         timeStamp: 'Wed May 13 2020 15:01:00 GMT+0300 (GMT+03:00)',
-        value: 6000
+        value: 20
       },
       {
         timeStamp: 'Wed May 13 2020 16:00:00 GMT+0300 (GMT+03:00)',
-        value: 3000
+        value: 60
       },
       {
         timeStamp: 'Wed May 13 2020 23:00:00 GMT+0300 (GMT+03:00)',
-        value: 1000
+        value: 20
       }
     ]
   }, {
@@ -152,23 +152,23 @@ const PLATFORM_OCCUPANCY_CHART = [
     values: [
       {
         timeStamp: 'Wed May 13 2020 09:00:00 GMT+0300 (GMT+03:00)',
-        value: 1200
+        value: 3
       },
       {
         timeStamp: 'Wed May 13 2020 12:00:00 GMT+0300 (GMT+03:00)',
-        value: 1400
+        value: 4
       },
       {
         timeStamp: 'Wed May 13 2020 14:01:00 GMT+0300 (GMT+03:00)',
-        value: 1500
+        value: 10
       },
       {
         timeStamp: 'Wed May 13 2020 17:00:00 GMT+0300 (GMT+03:00)',
-        value: 1200
+        value: 5
       },
       {
         timeStamp: 'Wed May 13 2020 23:00:00 GMT+0300 (GMT+03:00)',
-        value: 1000
+        value: 2
       }
     ]
   }
@@ -181,19 +181,19 @@ const WIRELESS_CHART = [
     values: [
       {
         timeStamp: 'Wed May 13 2020 09:00:00 GMT+0300 (GMT+03:00)',
-        value: 1000
+        value: 100
       },
       {
         timeStamp: 'Wed May 13 2020 15:00:00 GMT+0300 (GMT+03:00)',
-        value: 1000
+        value: 300
       },
       {
         timeStamp: 'Wed May 13 2020 15:01:00 GMT+0300 (GMT+03:00)',
-        value: 6000
+        value: 400
       },
       {
         timeStamp: 'Wed May 13 2020 16:00:00 GMT+0300 (GMT+03:00)',
-        value: 3000
+        value: 300
       },
       {
         timeStamp: 'Wed May 13 2020 23:00:00 GMT+0300 (GMT+03:00)',
@@ -207,23 +207,23 @@ const WIRELESS_CHART = [
     values: [
       {
         timeStamp: 'Wed May 13 2020 09:00:00 GMT+0300 (GMT+03:00)',
-        value: 1200
+        value: 300
       },
       {
         timeStamp: 'Wed May 13 2020 12:00:00 GMT+0300 (GMT+03:00)',
-        value: 1400
+        value: 400
       },
       {
         timeStamp: 'Wed May 13 2020 14:01:00 GMT+0300 (GMT+03:00)',
-        value: 1500
+        value: 250
       },
       {
         timeStamp: 'Wed May 13 2020 17:00:00 GMT+0300 (GMT+03:00)',
-        value: 1200
+        value: 100
       },
       {
         timeStamp: 'Wed May 13 2020 23:00:00 GMT+0300 (GMT+03:00)',
-        value: 1000
+        value: 300
       }
     ]
   },
@@ -233,23 +233,23 @@ const WIRELESS_CHART = [
     values: [
       {
         timeStamp: 'Wed May 13 2020 09:00:00 GMT+0300 (GMT+03:00)',
-        value: 1200
+        value: 100
       },
       {
         timeStamp: 'Wed May 13 2020 12:00:00 GMT+0300 (GMT+03:00)',
-        value: 1400
+        value: 120
       },
       {
         timeStamp: 'Wed May 13 2020 14:01:00 GMT+0300 (GMT+03:00)',
-        value: 1500
+        value: 130
       },
       {
         timeStamp: 'Wed May 13 2020 17:00:00 GMT+0300 (GMT+03:00)',
-        value: 1200
+        value: 100
       },
       {
         timeStamp: 'Wed May 13 2020 23:00:00 GMT+0300 (GMT+03:00)',
-        value: 1000
+        value: 60
       }
     ]
   },
@@ -259,23 +259,23 @@ const WIRELESS_CHART = [
     values: [
       {
         timeStamp: 'Wed May 13 2020 09:00:00 GMT+0300 (GMT+03:00)',
-        value: 1200
+        value: 500
       },
       {
         timeStamp: 'Wed May 13 2020 12:00:00 GMT+0300 (GMT+03:00)',
-        value: 1400
+        value: 300
       },
       {
         timeStamp: 'Wed May 13 2020 14:01:00 GMT+0300 (GMT+03:00)',
-        value: 1500
+        value: 400
       },
       {
         timeStamp: 'Wed May 13 2020 17:00:00 GMT+0300 (GMT+03:00)',
-        value: 1200
+        value: 350
       },
       {
         timeStamp: 'Wed May 13 2020 23:00:00 GMT+0300 (GMT+03:00)',
-        value: 1000
+        value: 120
       }
     ]
   }
@@ -289,10 +289,26 @@ const WIRELESS_CHART = [
 export class DashboardComponent implements OnInit {
 
   charts = {
-    ingress: INGRESS_CHART,
-    platform: PLATFORM_CHART,
-    platformOccupancy: PLATFORM_OCCUPANCY_CHART,
-    wireless: WIRELESS_CHART
+    ingress: {
+      minYScaleValue: 0,
+      maxYScaleValue: 7000,
+      data: INGRESS_CHART
+    },
+    platform: {
+      minYScaleValue: 0,
+      maxYScaleValue: 70,
+      data: PLATFORM_CHART
+    },
+    platformOccupancy: {
+      minYScaleValue: 0,
+      maxYScaleValue: 70,
+      data: PLATFORM_OCCUPANCY_CHART
+    },
+    wireless: {
+      minYScaleValue: 0,
+      maxYScaleValue: 1000,
+      data: WIRELESS_CHART
+    }
   };
 
   constructor() { }

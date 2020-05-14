@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="262.5" height="139.5">
+    <defs>
+        <filter id="prefix__a" width="66" height="28" x="164" y="21" filterUnits="userSpaceOnUse">
+            <feOffset in="SourceAlpha"/>
+            <feGaussianBlur result="blurOut" stdDeviation="2.236"/>
+            <feFlood flood-color="#000" result="floodOut"/>
+            <feComposite in="floodOut" in2="blurOut" operator="atop"/>
+            <feComponentTransfer>
+                <feFuncA slope=".6" type="linear"/>
+            </feComponentTransfer>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <filter id="prefix__b">
+            <feOffset in="SourceAlpha"/>
+            <feGaussianBlur result="blurOut"/>
+            <feFlood flood-color="#FFF" result="floodOut"/>
+            <feComposite in="floodOut" in2="blurOut" operator="out" result="compOut"/>
+            <feComposite in="compOut" in2="SourceAlpha" operator="in"/>
+            <feComponentTransfer>
+                <feFuncA type="linear"/>
+            </feComponentTransfer>
+            <feBlend in2="SourceGraphic"/>
+        </filter>
+    </defs>
+    <path fill="none" fill-rule="evenodd" stroke="#E5EEF5" d="M157.66 104.778l18.077 17.142 12.228.536"/>
+    <text fill="#FFF" font-family="Myriad Pro" font-size="12" transform="matrix(1.04621 0 0 1.04318 192.976 127.7)">
+        Windows
+    </text>
+    <path fill="none" fill-rule="evenodd" stroke="#E5EEF5" d="M171.329 13.839l16.969-8.743 19.619-.547"/>
+    <text fill="#FFF" font-family="Myriad Pro" font-size="12" transform="matrix(1.04621 0 0 1.04318 216.724 10.694)">
+        IPHONE
+    </text>
+    <path fill="none" fill-rule="evenodd" stroke="#E5EEF5" d="M108.548 118.377l-18.005 17.142-22.771.536"/>
+    <text fill="#FFF" font-family="Myriad Pro" font-size="12" transform="matrix(1.04621 0 0 1.04318 15.568 139.2)">
+        Android
+    </text>
+    <path fill="none" fill-rule="evenodd" stroke="#E5EEF5" d="M72.771 71.673l-22.972 1.069"/>
+    <text fill="#FFF" font-family="Myriad Pro" font-size="12" transform="matrix(1.04621 0 0 1.04318 1.256 76.7)">
+        Others
+    </text>
+    <path fill="none" fill-rule="evenodd" stroke="#E5EEF5" d="M108.551 36.965L90.546 19.824l-22.771-.536"/>
+    <text fill="#FFF" font-family="Myriad Pro" font-size="12" transform="matrix(1.04621 0 0 1.04318 22.01 22.194)">
+        IPAD
+    </text>
+    <path fill="#AB7DF6" fill-rule="evenodd" d="M86.391 34.387c-8.295 10.019-13.284 22.9-13.284 36.953 0 8.381 1.775 16.345 4.967 23.535l51.528-23.535-43.211-36.953z" opacity=".502"/>
+    <path fill="#81C926" fill-rule="evenodd" d="M143.145 109.518c15.329-5.817 26.214-20.546 26.214-37.797 0-22.342-18.259-40.453-40.783-40.453-12.058 0-22.894 5.19-30.361 13.442l59.089 47.463-14.159 17.345z"/>
+    <path fill="#FACA00" fill-rule="evenodd" d="M83.544 91.982c10.313 22.816 35.882 35.281 60.599 28.43l-14.058-49.226-46.541 20.796zm97.309-32.148c-.251-1.186-.545-2.371-.883-3.554-5.058-17.711-18.718-30.604-35.118-35.417l36.001 38.971z"/>
+    <path fill="#26C1C9" fill-rule="evenodd" d="M141.882 112.637c21.215-5.466 36.892-24.764 36.892-47.732 0-26.887-21.482-48.745-48.183-49.273l-.989 54.515 12.28 42.49z"/>
+    <path fill="#AB7DF6" fill-rule="evenodd" d="M191.667 85.539c2.489-6.81 3.847-14.164 3.847-21.834 0-35.183-28.573-63.704-63.819-63.704-.7 0-1.398.011-2.093.033v71.202l62.065 14.303z"/>
+    <path fill="#FFF" fill-rule="evenodd" d="M130.126 83.454c7.222 0 13.077-5.838 13.077-13.04 0-7.201-5.855-13.039-13.077-13.039-7.223 0-13.078 5.838-13.078 13.039 0 7.202 5.855 13.04 13.078 13.04z"/>
+    <g filter="url(#prefix__a)">
+        <g filter="url(#prefix__b)">
+            <path fill="#474747" fill-rule="evenodd" stroke="#3F536E" d="M170.484 36.995v4.383c0 1.448 1.368 2.622 3.057 2.622h48.393c1.682 0 3.057-1.174 3.057-2.622V27.622c0-1.448-1.369-2.622-3.057-2.622h-48.393c-1.683 0-3.057 1.174-3.057 2.622v5.114l-2.485 2.129 2.485 2.13z" opacity=".949"/>
+        </g>
+    </g>
+    <text fill="#FFF" font-family="Myriad Pro" font-size="12" transform="matrix(.98667 0 0 1 187.963 38.984)">
+        39%
+    </text>
+</svg>

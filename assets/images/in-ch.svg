@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="223.5" height="155.5">
+    <text x="87" y="153.888" fill="#FFF" font-family="Myriad Pro" font-size="24">
+        46mbs
+    </text>
+    <text x="198" y="138" font-family="Myriad Pro" font-size="12">
+        100
+    </text>
+    <path fill="#26C1C9" fill-rule="evenodd" d="M109 0C48.801 0 0 48.801 0 109h11.003c.081-53.622 43.575-97.066 97.216-97.066 53.641 0 97.135 43.444 97.216 97.066H218C218 48.801 169.199 0 109 0" opacity=".2"/>
+    <path fill="#16ADB7" fill-rule="evenodd" d="M12.38 108.993c-.091-27.703 11.703-55.269 34.653-74.442 2.605-2.177 2.948-6.046.765-8.636-2.183-2.591-6.07-2.927-8.675-.75C13.277 46.758-.015 77.795.069 108.993H12.38z"/>
+    <path fill="#26C1C9" fill-rule="evenodd" d="M56.988 47.84l2.36-1.853 43.643 56.14-2.36 1.853-43.643-56.14z"/>
+    <path fill="none" fill-rule="evenodd" stroke="#26C1C9" stroke-width="3" d="M109.5 99c6.904 0 12.5 5.597 12.5 12.5 0 6.904-5.596 12.5-12.5 12.5-6.903 0-12.5-5.596-12.5-12.5 0-6.903 5.597-12.5 12.5-12.5z"/>
+    <text x="1" y="138.102" fill="#FFF" font-family="Myriad Pro" font-size="12">
+        0
+    </text>
+</svg>

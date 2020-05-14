@@ -1,0 +1,64 @@
+.gm-pointer {
+  cursor: pointer;
+}
+
+.gm-disable {
+  pointer-events: none !important;
+}
+
+.gm-hide {
+  display: none !important;
+}
+
+.gm-blur {
+  filter: blur(5px);
+
+  &-x2 {
+    filter: blur(10px);
+  }
+
+  &-x3 {
+    filter: blur(15px);
+  }
+}
+
+.gm-mr {
+  margin-right: 0 !important;
+}
+
+.gm-mt {
+  margin-top: 0 !important;
+}
+
+.gm-mb {
+  margin-bottom: 0 !important;
+}
+
+.gm-ml {
+  margin-left: 0 !important;
+}
+
+.gm-uppercase {
+  text-transform: uppercase !important;
+}
+
+.gm-text-transform-normal {
+  text-transform: initial;
+}
+
+.gm-text-center {
+  text-align: center !important;
+}
+
+.gm-scroll-hide {
+  overflow: hidden !important;
+}
+
+.gm-white-link {
+  color: #fff;
+  text-decoration: underline;
+
+  &:hover {
+    color: #fff;
+  }
+}

@@ -1,0 +1,67 @@
+.popover {
+  filter: $popover-box-shadow;
+
+  .popover-body {
+    width: max-content;
+    max-width: $popover-max-width;
+    white-space: pre-wrap;
+  }
+
+  &--info,
+  &--menu {
+    top: -4px !important;
+    left: 4px !important;
+
+    border-radius: $elemRadiusSmall;
+    background: var(--cl-white);
+    box-shadow: none !important;
+    transition: $popover-transition;
+
+    .arrow {
+      display: none;
+    }
+
+    .popover-body {
+      width: $onboarding-list-item-size;
+
+      padding: rem(11) rem(14);
+
+      color: $cl-secondary;
+    }
+
+    .close {
+      position: absolute;
+      top: rem(2);
+      right: rem(2);
+
+      transform: scale(0.9);
+    }
+  }
+
+  &--menu {
+    .popover-body {
+      padding: 0;
+
+      border-radius: $elemRadiusSmall;
+      box-shadow: $sh-main;
+    }
+  }
+}
+
+@include max-wide(phones) {
+  .popover {
+    .popover-body {
+      max-width: rem(200);
+
+      font-size: rem(10);
+    }
+  }
+}
+
+@include max-wide(phonesLg) {
+  .popover {
+    .popover-body {
+      max-width: rem(160);
+    }
+  }
+}

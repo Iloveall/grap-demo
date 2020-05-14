@@ -1,0 +1,25 @@
+@import 'functions';
+@import 'mixins';
+@import 'variables';
+@import 'scrolls';
+//@import 'extends/';
+
+
+%card-header {
+  height: 41px;
+
+  padding: rem(10);
+
+  background: #000000;
+
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+
+  cursor: pointer;
+}

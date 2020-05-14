@@ -1,4 +1,4 @@
-<div class="__background" [ngStyle]="{'background-image': 'url(' + imgUrl + ')'}">
+<div class="__background" [ngStyle]="{'background-image': 'url(' + imgUrl + ')'}" (click)="open()">
   <span class="__value">{{ value }}%</span>
   <button class="__button">Preview</button>
 </div>

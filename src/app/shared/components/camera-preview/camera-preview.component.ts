@@ -15,4 +15,8 @@ export class CameraPreviewComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  open(): void {
+    window.open(this.link, '_blank');
+  }
+
 }

@@ -1,17 +1,31 @@
 <div class="__wrapper">
-  <div class="__icon-arrow">
-    <span class="gbi-arrow-line-down"></span> 12(35%)
-  </div>
-  <div>
-    Weds 4/21 10:00am
-    Estimate Count: 41
+  <div *ngIf="type === 1">
+    <div>
+      Platform 9 & 10
+      Weds 4/21 10:00am
+      Estimate Count: 41
+    </div>
   </div>
 
-  <div class="__values">
+  <div *ngIf="type === 2">
+    <div class="__icon-arrow">
+      <span class="gbi-arrow-line-down"></span> 12(35%)
+    </div>
+    <div>
+      Weds 4/21 10:00am
+      Estimate Count: 41
+    </div>
+  </div>
+
+  <div class="__values" *ngIf="type === 3">
+    <div>VISITS</div>
+
     <div class="__value" *ngFor="let value of values">
-        <span class="gp-round __value-icon"
+        <span class="__round __value-icon"
               [style.background-color]="value.color">
         </span>
+
+      0-5 190
     </div>
   </div>
 </div>

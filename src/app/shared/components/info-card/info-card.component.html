@@ -1,5 +1,7 @@
 <div class="__header" fxLayout="row" fxLayoutAlign="space-between center" (click)="open()">
-  {{ title }} <span class="__draggable gbi-menu"></span>
+  <div>{{ title }} <span class="__description" *ngIf="description">{{ description }}</span></div>
+
+  <span class="__draggable gbi-menu"></span>
 </div>
 
 <div class="__wrapper">

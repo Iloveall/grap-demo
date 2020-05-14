@@ -7,6 +7,8 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class InfoCardComponent implements OnInit {
   @Input() title: string;
+  @Input() description: string;
+  @Input() link = 'https://google.com';
 
   constructor() {
   }
@@ -15,7 +17,7 @@ export class InfoCardComponent implements OnInit {
   }
 
   open() {
-    window.open('https://google.com', '_blank');
+    window.open(this.link, '_blank');
   }
 
 }

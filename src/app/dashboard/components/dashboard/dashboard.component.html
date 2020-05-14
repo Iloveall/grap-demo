@@ -42,17 +42,21 @@
 
   <div fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="10px">
     <div fxLayout="column" fxFlex>
-      <app-info-card title="Ingress/Egress Count">
+      <app-info-card title="Ingress/Egress Count" link="https://au.skyfii.com/login">
         <app-chart-line [data]="charts?.ingress?.data"
                         [minYScaleValue]="charts?.ingress?.minYScaleValue"
-                        [maxYScaleValue]="charts?.ingress?.maxYScaleValue">
+                        [maxYScaleValue]="charts?.ingress?.maxYScaleValue"
+                        [tooltipType]="charts?.ingress?.tooltipType"
+                        [tickValues]="charts?.ingress?.tickValues">
         </app-chart-line>
       </app-info-card>
 
       <app-info-card title="Platform Crowd Density">
         <app-chart-line [data]="charts?.platform?.data"
                         [minYScaleValue]="charts?.platform?.minYScaleValue"
-                        [maxYScaleValue]="charts?.platform?.maxYScaleValue">
+                        [maxYScaleValue]="charts?.platform?.maxYScaleValue"
+                        [tooltipType]="charts?.platform?.tooltipType"
+                        [tickValues]="charts?.platform?.tickValues">
         </app-chart-line>
       </app-info-card>
     </div>
@@ -77,17 +81,23 @@
   </div>
 
   <div fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="10px">
-    <app-info-card title="Platform Occupancy - LIVE - Wed 6/5/20, 01:00 pm" fxFlex>
+    <app-info-card title="Platform Occupancy - "
+                   description="LIVE - Wed 6/5/20, 01:00 pm"
+                   link="https://app.armoredthings.us/overview" fxFlex>
       <app-chart-line [data]="charts?.platformOccupancy?.data"
                       [minYScaleValue]="charts?.platformOccupancy?.minYScaleValue"
-                      [maxYScaleValue]="charts?.platformOccupancy?.maxYScaleValue">
+                      [maxYScaleValue]="charts?.platformOccupancy?.maxYScaleValue"
+                      [tooltipType]="charts?.platformOccupancy?.tooltipType"
+                      [tickValues]="charts?.platformOccupancy?.tickValues">
       </app-chart-line>
     </app-info-card>
 
     <app-info-card title="Wireless Device Count - Dwell Time" fxFlex>
       <app-chart-line [data]="charts?.wireless?.data"
                       [minYScaleValue]="charts?.wireless?.minYScaleValue"
-                      [maxYScaleValue]="charts?.wireless?.maxYScaleValue">
+                      [maxYScaleValue]="charts?.wireless?.maxYScaleValue"
+                      [tooltipType]="charts?.wireless?.tooltipType"
+                      [tickValues]="charts?.wireless?.tickValues">
       </app-chart-line>
     </app-info-card>
   </div>

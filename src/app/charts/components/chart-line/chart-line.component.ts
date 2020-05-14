@@ -26,6 +26,8 @@ export class ChartLineComponent implements OnInit, AfterViewInit {
 
   @Input() minYScaleValue = 1000;
   @Input() maxYScaleValue = 7000;
+  @Input() tooltipType = 1;
+  @Input() tickValues: any[] = [0, 25, 75, 100];
 
   width: number;
   height: number;
@@ -116,7 +118,7 @@ export class ChartLineComponent implements OnInit, AfterViewInit {
 
   createYAxis(): void {
     this.yAxis = axisLeft(this.yScale)
-      .tickSize(1000)
+      .tickValues(this.tickValues)
       .tickSize(-this.width)
       .tickFormat((value) => `${value}`);
 
